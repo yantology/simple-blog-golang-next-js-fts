@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Light mode colors */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 3.9%; /* Near black */
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 3.9%; /* Near black */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 3.9%; /* Near black */
+    --primary: 0 0% 9%; /* Dark gray */
+    --primary-foreground: 0 0% 98%; /* Near white */
+    --secondary: 0 0% 96.1%; /* Light gray */
+    --secondary-foreground: 0 0% 9%; /* Dark gray */
+    --muted: 0 0% 96.1%; /* Light gray */
+    --muted-foreground: 0 0% 45.1%; /* Medium gray */
+    --accent: 0 0% 96.1%; /* Light gray */
+    --accent-foreground: 0 0% 9%; /* Dark gray */
+    --destructive: 0 84.2% 60.2%; /* Red */
+    --destructive-foreground: 0 0% 98%; /* Near white */
+    --border: 0 0% 89.8%; /* Light gray border */
+    --input: 0 0% 89.8%; /* Light gray input */
+    --ring: 0 0% 3.9%; /* Near black */
+    --chart-1: 12 76% 61%; /* Chart color 1 */
+    --chart-2: 173 58% 39%; /* Chart color 2 */
+    --chart-3: 197 37% 24%; /* Chart color 3 */
+    --chart-4: 43 74% 66%; /* Chart color 4 */
+    --chart-5: 27 87% 67%; /* Chart color 5 */
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* Dark mode colors */
+    --background: 0 0% 3.9%; /* Near black */
+    --foreground: 0 0% 98%; /* Near white */
+    --card: 0 0% 3.9%; /* Near black */
+    --card-foreground: 0 0% 98%; /* Near white */
+    --popover: 0 0% 3.9%; /* Near black */
+    --popover-foreground: 0 0% 98%; /* Near white */
+    --primary: 0 0% 98%; /* Near white */
+    --primary-foreground: 0 0% 9%; /* Dark gray */
+    --secondary: 0 0% 14.9%; /* Dark gray */
+    --secondary-foreground: 0 0% 98%; /* Near white */
+    --muted: 0 0% 14.9%; /* Dark gray */
+    --muted-foreground: 0 0% 63.9%; /* Medium gray */
+    --accent: 0 0% 14.9%; /* Dark gray */
+    --accent-foreground: 0 0% 98%; /* Near white */
+    --destructive: 0 62.8% 30.6%; /* Dark red */
+    --destructive-foreground: 0 0% 98%; /* Near white */
+    --border: 0 0% 14.9%; /* Dark gray border */
+    --input: 0 0% 14.9%; /* Dark gray input */
+    --ring: 0 0% 83.1%; /* Light gray */
+    --chart-1: 220 70% 50%; /* Chart color 1 */
+    --chart-2: 160 60% 45%; /* Chart color 2 */
+    --chart-3: 30 80% 55%; /* Chart color 3 */
+    --chart-4: 280 65% 60%; /* Chart color 4 */
+    --chart-5: 340 75% 55%; /* Chart color 5 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
